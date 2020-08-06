@@ -285,7 +285,8 @@ function loadModel(){
     var modelName =  modelNames[Math.floor(Math.random() * modelNames.length )];
     //拼接路径
     //如果model3的文件形如baseModelPath/xxx/xxx.model3.json则下面不用修改，否则按照文件路径进行修改
-    modelPath =  baseModelPath + modelName + "/" + modelName + ".model3.json";
+  //  modelPath =  baseModelPath + modelName + "/" + modelName + ".model3.json";
+    modelPath =  'https://cdn.jsdelivr.net/gh/Volcanione/live2Dmodel/3.0/model/xiaji/xiaji.model3.json'
     var ajax = null;
     if(window.XMLHttpRequest){ajax = new XMLHttpRequest();}else if(window.ActiveObject){
         ajax = new ActiveXObject("Microsoft.XMLHTTP");
